@@ -13,9 +13,10 @@
 						    <header class="article-header">
 							
 							    <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                  <p class="byline vcard"><?php
-                    printf(__('<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));
-                  ?></p>
+                  				<ul class="post-by byline vcard">
+                                    <li class="no-padding-left"><?php printf(__('<time class="updated" datetime="%1$s" pubdate>%2$s</time>' , 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));?></li>
+                                    <li class="last"><?php comments_popup_link( __( 'No Comments', 'bonestheme' ), __( '1 Comment', 'bonestheme' ), __( '% Comments', 'bonestheme' ) ); ?></li>
+                                </ul>
 						
 						    </header> <!-- end article header -->
 					
