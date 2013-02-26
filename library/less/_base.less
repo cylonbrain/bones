@@ -30,6 +30,8 @@ and will be used across all viewports.
 
 
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700|Droid+Serif:400,700|Lobster+Two:700,700italic);
+
 /*********************
 01. GENERAL STYLES
 *********************/
@@ -126,7 +128,7 @@ a, a:visited {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: @sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 400;
+	font-weight: 800;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -170,9 +172,19 @@ h5, .h5 {
 *********************/
 
 .header {
+	background-image: url(images/header-bg.jpg);
+	border-bottom: 1px solid #dfdfdf;
 	#inner-header {}
 
-	#logo {}
+	#logo {
+		a{
+			font-family: 'Lobster Two', cursive;
+			font-weight: 700;
+			font-size: 38px;
+			font-style: italic;
+  			text-shadow: 2px 2px 1px #aaa;
+  		}
+	}
 
 	nav {
 		ul.nav {
@@ -201,7 +213,7 @@ and more scalable.
 
 .nav {
 	border: 1px solid #ccc;
-	border-bottom: 0;
+	border-bottom: 1;
 
 	li {
 
@@ -209,7 +221,7 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
+			background-color: #fff;
 			border-bottom: 1px solid #ccc;
 
 			/*
@@ -277,7 +289,7 @@ and more scalable.
 
 #content {
 	margin-top: 2.2em;
-
+	text-align: justify;
 	#inner-content {}
 }
 

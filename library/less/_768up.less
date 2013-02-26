@@ -40,22 +40,40 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
-	border: 0;
-
+	ul { margin: 0px 0px 0px 0px;}
+	float: left;
+	border:1px solid #ccc;
+	background-color:#fff;
+	margin-top:40px;
+	position:relative;
+	width:976px;
+	z-index:1000;
+	box-shadow:0 1px 0px #fff;
+	margin: 20px;
+	list-style: none;
 	li {
+		border-bottom: 0px solid #CCCCCC;
+		border-right: 1px solid #CCCCCC;
 		float: left;
+		margin-bottom: -1px;
 		position: relative;
 
 		a {
-			border-bottom: 0;
+			padding: 0 15px;
+			display: block;
+			color: #fff;
+			font-size: 15px;
+			line-height: 48px;
+			color: #444;
+			float: left;
 
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
+				background-color: #444;
+				color: #fff;
 
 			}
 		}
