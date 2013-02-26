@@ -289,8 +289,8 @@ and more scalable.
 
 #content {
 	margin-top: 2.2em;
-	text-align: justify;
-	#inner-content {}
+	
+	#inner-content {text-align: justify;}
 }
 
 		.hentry {
@@ -322,9 +322,36 @@ and more scalable.
 
 		/* post meta */
 		.byline {
-			color: #999;
-
-			time {}
+			height: 25px;
+			list-style: none outside none;
+			margin: 0;
+			padding-bottom: 12px;
+		
+			li {
+				float:left;
+				color:#999;
+				font-size: 0.975em;
+				font-weight:bold;
+				font-family: @sans-serif;
+				text-rendering: optimizelegibility;
+				padding:0 5px;
+    			
+			}
+			li::after {
+  				content: "|";
+  				display: inline;
+  				margin-left: 10px;
+			}
+		
+			li.last::after {
+				content: "";
+			}
+			li a {
+				color:#999;
+			}
+		 	li a:hover {
+				color:#444;
+			}
 		}
 
 		/* entry content */
